@@ -15,6 +15,25 @@
 	border-radius: 5px 5px 0px 0px;
 }
 
+.testinggggg {
+	color:white;
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.ProjDesc {
+	font-size: medium;
+	margin:10px;
+	font-weight: bold;
+}
+
+.contactInfo {
+	display: flex;
+	justify-content: space-evenly;
+
+}
+
+
 
 
 html, body, div, span, applet, object,
