@@ -33,6 +33,123 @@
 
 }
 
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url(https://fonts.googleapis.com/css?family=Bree+Serif);
+
+
+#containerDropDown {
+	margin: 0 auto;
+}
+
+
+.navDrop {
+	/* margin: 50px 0; */
+	background-color: #FFF;
+}
+
+.navDrop ul {
+	padding: 0;
+  	margin: 0;
+	list-style: none;
+	position: relative;
+	}
+
+.navDrop ul li {
+	display:inline-block;
+	background-color: #a56969;
+	color:#FFF;
+	padding-left: 0px;
+	}
+
+.navDrop a {
+	display:block;
+	padding:0 10px;
+	color:#000000;
+	font-weight: bold;
+	font-size:20px;
+	line-height: 60px;
+	text-decoration:none;
+}
+
+.navDrop a:hover {
+	background-color: #000000;
+}
+
+/* Hide Dropdowns by Default */
+.navDrop ul ul {
+	display: none;
+	position: absolute;
+	/* top: 60px; the height of the main .navDrop */
+}
+
+/* Display Dropdowns on Hover */
+.navDrop ul li:hover > ul {
+	display:flex;
+	flex-direction: column;
+}
+
+/* Fisrt Tier Dropdown */
+.navDrop ul ul li {
+	width:130px;
+	float:none;
+	display:list-item;
+	position: relative;
+}
+
+
+/* Change this in order to change the Dropdown symbol */
+li > a:after { content:  ' v'; }
+li > a:only-child:after { content: ''; }
+
+.containerAboutMe {
+	margin: 0 auto;
+	max-width: 75%;
+	width: 1400px;
+	/* display: flex; */
+	/* flex-direction: row; */
+	/* justify-content: space-evenly; */
+}
+
+	@media screen and (min-width: 961px) and (max-width: 1880px) {
+
+		.containerAboutMe {
+			width: 1200px;
+		}
+
+	}
+
+	@media screen and (min-width: 961px) and (max-width: 1620px) {
+
+		.containerAboutMe {
+			width: 960px;
+		}
+
+	}
+
+	@media screen and (min-width: 961px) and (max-width: 1320px) {
+
+		.containerAboutMe {
+			width: 100%;
+		}
+
+	}
+
+	@media screen and (max-width: 960px) {
+
+		.containerAboutMe {
+			width: 100%;
+		}
+
+	}
+
+	@media screen and (max-width: 736px) {
+
+		.containerAboutMe {
+			width: 100%;
+		}
+
+	}
+
 
 
 
@@ -1765,7 +1882,7 @@ input, select, textarea {
 		section > :last-child,
 		section > .container, section:last-child, article > :last-child,
 		article > .container, article:last-child {
-			margin-bottom: 0;
+			margin-bottom: 5em;
 		}
 
 		.row > section, .row > article {
@@ -2017,7 +2134,7 @@ input, select, textarea {
 		.item header {
 			background: #fff;
 			margin: 0;
-			padding: 1em 0 1em 0;
+			padding: 1em 0 0 0;
 			font-size: 0.8em;
 		}
 
@@ -2271,7 +2388,7 @@ input, select, textarea {
 					}
 
 			#main > section.cover {
-				padding: 10em 0;
+				padding: 4em 0;
 				background-size: cover;
 				background-position: center center;
 			}
